@@ -3,6 +3,18 @@
 * {
 	padding:0;
 	margin:0;
+	box-sizing: border-box;
+}
+*::-webkit-scrollbar {
+	width:10px;
+	height:10px;
+}
+*::-webkit-scrollbar-track {
+	background:#404040;
+}
+*::-webkit-scrollbar-thumb {
+	background:#A0A0A0;
+	border-radius:10px;
 }
 body {
 	font-family:Oswald;
@@ -20,7 +32,7 @@ body {
 	position:absolute;
 }
 .container-header {
-	width:1080px;
+	width:1360px;
 }
 .header-inner {
 	width:100%;
@@ -57,7 +69,7 @@ body {
 	padding-top:90px;
 	width:100%;
 	height:800px;
-	background: linear-gradient(134.63deg, #7000FF 0.65%, #404040 36.89%);
+	background: linear-gradient(134.63deg, #B367FF 0.65%, #404040 36.89%);
 }
 .container-home {
 	display:flex;
@@ -90,7 +102,8 @@ body {
 	transition:0.5s;
 }
 .but:hover {
-	background:black;
+	background:#7002C7;
+	box-shadow: 0px 0px 10px 5px rgba(34, 60, 80, 0.2);
 }
 .home__subtitle {
 	margin-top:26px;
@@ -118,10 +131,14 @@ body {
 .service {
 	width:100%;
 	height:800px;
-	background: linear-gradient(135.47deg, #404040 66.87%, #6C00F4 100%);
+	background: #404040;
+}
+.service__title {
+	text-align:center;
+	padding-top:87px;
 }
 .card-blocks {
-	padding-top:200px;
+	padding-top:76px;
 	display:flex;
 	justify-content: space-between;
 	align-items: center;
@@ -135,6 +152,7 @@ body {
 	display:flex;
 	justify-content: center;
 	align-items: center;
+	box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
 }
 .card__price {
 	font-weight: normal;
@@ -143,12 +161,47 @@ body {
 	align-self:flex-start;
 }
 .card__subtitle {
+	font-size:18px;
+	font-family:sans-serif;
+	font-weight:100;
 	color:black;
-	margin-top:29px;
+	margin-top:25px;
 	margin-bottom:17px;
 }
 .card__but {
-	padding:10px 100px;
+	padding:12px 100px;
+	border-radius:50px;
+}
+.card__text-block {
+	margin-top:20px;
+}
+.achivement {
+	width:100%;
+	height:800px;
+	background:#404040;
+	display:flex;
+	align-items: center;
+}
+.achivement-blocks {
+	display:flex;
+	justify-content: space-between;
+}
+.achivement-block {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+}
+.a-two {
+	position:relative;
+	bottom:50px;
+}
+.achivement__title {
+	font-size:30px;
+}
+.achivement__subtitle {
+	font-size:20px;
 }
 .footer {
 	width:100%;
@@ -163,9 +216,9 @@ body {
 	align-items: flex-start;
 }
 .footer__subtitle {
-	font-family:Oswald;
-	font-weight: normal;
-	font-size: 20px;
+	font-family:Roboto;
+	font-weight: 100;
+	font-size: 18px;
 	line-height: 30px;
 	margin-top:50px;
 }
